@@ -134,7 +134,7 @@ public class CallCenterServiceImpl implements ICallCenterService {
 	 * com.gtorres.test.callcenter.service.ICallCenterService#assignCall(com.gtorres
 	 * .test.callcenter.dto.Call)
 	 */
-	@Override
+	@Override 
 	synchronized public void assignCall(Call call) {
 		Employee employeeAsigned = null;
 		while (!this.existVacantEmployee()) {

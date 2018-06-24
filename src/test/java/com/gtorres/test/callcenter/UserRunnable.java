@@ -7,13 +7,12 @@ import com.gtorres.test.callcenter.dto.Call;
 import com.gtorres.test.callcenter.service.impl.Dispatcher;
 
 /**
- * @author gtorresoft
+ * @author gtorresoft 
  *
  */
 public class UserRunnable implements Runnable{
 	private Call call;
 	private Dispatcher dispatcher;
-	
 	
 	/**
 	 * @param call
@@ -24,7 +23,6 @@ public class UserRunnable implements Runnable{
 		this.dispatcher = dispatcher;
 	}
 
-
 	@Override
 	public void run() {
 		try {
@@ -34,5 +32,4 @@ public class UserRunnable implements Runnable{
 			e.printStackTrace();
 		}
 	}
-
 }

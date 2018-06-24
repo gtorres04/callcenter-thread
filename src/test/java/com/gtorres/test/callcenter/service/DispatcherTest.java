@@ -34,7 +34,7 @@ public class DispatcherTest {
 	public void dispatcherCall_2llamadasConcurrentes() {
 		ICallsService iCallsService = new CallsServiceImpl(new ArrayList<>());
 		IEmployeeService iEmployeeService = new EmployeeServiceImpl(new ArrayList<>());
-		ExecutorService executorServiceEmployees = Executors.newFixedThreadPool(10);
+		ExecutorService executorServiceEmployees = Executors.newFixedThreadPool(6);
 		ICallCenterService iCallCenterService = new CallCenterServiceImpl(iEmployeeService, iCallsService,
 				iTypeEmployeeService, executorServiceEmployees);
 		Dispatcher dispatcher = new Dispatcher(iCallCenterService);
@@ -94,7 +94,7 @@ public class DispatcherTest {
 	public void dispatcherCall_4llamadasConcurrentes() {
 		ICallsService iCallsService = new CallsServiceImpl(new ArrayList<>());
 		IEmployeeService iEmployeeService = new EmployeeServiceImpl(new ArrayList<>());
-		ExecutorService executorServiceEmployees = Executors.newFixedThreadPool(10);
+		ExecutorService executorServiceEmployees = Executors.newFixedThreadPool(6);
 		ICallCenterService iCallCenterService = new CallCenterServiceImpl(iEmployeeService, iCallsService,
 				iTypeEmployeeService, executorServiceEmployees);
 		Dispatcher dispatcher = new Dispatcher(iCallCenterService);
@@ -153,7 +153,7 @@ public class DispatcherTest {
 	public void dispatcherCall_5llamadasConcurrentes() {
 		ICallsService iCallsService = new CallsServiceImpl(new ArrayList<>());
 		IEmployeeService iEmployeeService = new EmployeeServiceImpl(new ArrayList<>());
-		ExecutorService executorServiceEmployees = Executors.newFixedThreadPool(10);
+		ExecutorService executorServiceEmployees = Executors.newFixedThreadPool(6);
 		ICallCenterService iCallCenterService = new CallCenterServiceImpl(iEmployeeService, iCallsService,
 				iTypeEmployeeService, executorServiceEmployees);
 		Dispatcher dispatcher = new Dispatcher(iCallCenterService);
@@ -212,7 +212,7 @@ public class DispatcherTest {
 	public void dispatcherCall_10llamadasConcurrentes() {
 		ICallsService iCallsService = new CallsServiceImpl(new ArrayList<>());
 		IEmployeeService iEmployeeService = new EmployeeServiceImpl(new ArrayList<>());
-		ExecutorService executorServiceEmployees = Executors.newFixedThreadPool(10);
+		ExecutorService executorServiceEmployees = Executors.newFixedThreadPool(6);
 		ICallCenterService iCallCenterService = new CallCenterServiceImpl(iEmployeeService, iCallsService,
 				iTypeEmployeeService, executorServiceEmployees);
 		Dispatcher dispatcher = new Dispatcher(iCallCenterService);
@@ -255,7 +255,7 @@ public class DispatcherTest {
 	public void dispatcherCall_15llamadasConcurrentes() {
 		ICallsService iCallsService = new CallsServiceImpl(new ArrayList<>());
 		IEmployeeService iEmployeeService = new EmployeeServiceImpl(new ArrayList<>());
-		ExecutorService executorServiceEmployees = Executors.newFixedThreadPool(10);
+		ExecutorService executorServiceEmployees = Executors.newFixedThreadPool(6);
 		ICallCenterService iCallCenterService = new CallCenterServiceImpl(iEmployeeService, iCallsService,
 				iTypeEmployeeService, executorServiceEmployees);
 		Dispatcher dispatcher = new Dispatcher(iCallCenterService);

@@ -23,7 +23,7 @@ public class Utility {
 		try {
 			Thread.sleep(segundos * 1000);
 		} catch (InterruptedException ex) {
-			Thread.currentThread().interrupt();
+			Thread.currentThread().interrupt(); 
 		}
 	}
 
